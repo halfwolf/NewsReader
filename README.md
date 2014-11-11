@@ -1,14 +1,6 @@
-[Live Demo](http://aa-newsreader.herokuapp.com/)
+# ReadSS
+A minimal RSS reader built on rails with Backbone. 
 
-# Welcome to News Reader Demo
-
-* bundle install
-* rake db:migrate
-* rake db:seed
-
-Three feeds with their entries will be created upon running `rake
-db:seed`.
-
-Good luck. Have fun.
-
-
+* Add / Remove Feeds
+* Live Updating
+* Refresh button if that's not fast enough for you ;)

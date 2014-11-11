@@ -25212,3 +25212,554 @@ Processing by Api::EntriesController#index as JSON
   [1m[35m (0.8ms)[0m  SELECT "entries"."guid" FROM "entries"
   [1m[36mEntry Load (0.6ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 6]]
 Completed 200 OK in 149ms (Views: 4.4ms | ActiveRecord: 5.3ms)
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 18:54:55 -0500
+
+PG::ConnectionBad - FATAL:  role "appacademy" does not exist
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3680627491184320602__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:54:55 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:28 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:29 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:30 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:38 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:40 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:40 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:41 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:42 -0500
+
+
+Started POST "/__better_errors/70187111380780/variables" for 127.0.0.1 at 2014-11-10 18:55:42 -0500
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-10 18:56:42 -0500
+
+PG::ConnectionBad - FATAL:  role "appacademy" does not exist
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3680627491184320602__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70187112614700/variables" for 127.0.0.1 at 2014-11-10 18:56:43 -0500
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-10 18:58:17 -0500
+
+PG::ConnectionBad - FATAL:  database "news_reader_development" does not exist
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4493615930272134313__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70352983315860/variables" for 127.0.0.1 at 2014-11-10 18:58:17 -0500
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-10 18:59:34 -0500
+
+PG::ConnectionBad - FATAL:  database "news_reader_development" does not exist
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2165457911781343411__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70228631401840/variables" for 127.0.0.1 at 2014-11-10 18:59:34 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 18:59:38 -0500
+
+PG::ConnectionBad - FATAL:  database "news_reader_development" does not exist
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2165457911781343411__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70228628390120/variables" for 127.0.0.1 at 2014-11-10 18:59:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 18:59:58 -0500
+
+ActiveRecord::PendingMigrationError - Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.:
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2165457911781343411__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/colinday/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70228626461640/variables" for 127.0.0.1 at 2014-11-10 18:59:59 -0500
+  [1m[36m (100.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (20.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFeeds (20130626182935)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (25.0ms)[0m  [1mCREATE TABLE "feeds" ("id" serial primary key, "url" character varying(255) NOT NULL, "title" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "index_feeds_on_url" ON "feeds" ("url")
+  [1m[36mSQL (39.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20130626182935"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Migrating to CreateEntries (20130626183103)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (7.6ms)[0m  CREATE TABLE "entries" ("id" serial primary key, "guid" character varying(255) NOT NULL, "link" character varying(255) NOT NULL, "title" character varying(255) NOT NULL, "published_at" timestamp NOT NULL, "feed_id" integer NOT NULL, "json" text NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (3.1ms)[0m  [1mCREATE INDEX "index_entries_on_feed_id" ON "entries" ("feed_id")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "index_entries_on_guid" ON "entries" ("guid")
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20130626183103"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 19:00:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (9.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 441ms (Views: 440.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/entry.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/views/entry_show.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/views/feeds_index.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/routers/feeds_router.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 19:00:13 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (1.1ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2014-11-10 19:01:17 -0500
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"USA feed", "url"=>"http://feeds.feedburner.com/USAgov-blog?format=xml"}}
+  [1m[36mFeed Load (1.7ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://feeds.feedburner.com/USAgov-blog?format=xml' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["title", "USA.gov"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["url", "http://feeds.feedburner.com/USAgov-blog?format=xml"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/102287643172"], ["json", "{\"title\":\"What's the Difference Between Memorial Day and Veterans Day?\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/qMfLxKHDU6I/102287643172\",\"description\":\"\\u0026lt;p\\u0026gt;Veterans Day will be celebrated tomorrow and sometimes we get asked what the difference between Memorial Day and Veterans Day is. According to the Veterans Administration:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Many people confuse \\u0026lt;a href=\\\"http://www.va.gov/opa/speceven/memday/\\\"\\u0026gt;Memorial Day\\u0026lt;/a\\u0026gt; and Veterans Day. Memorial Day is a day for remembering and honoring military personnel who died in the service of their country, particularly those who died in battle or as a result of wounds sustained in battle. While those who died are also remembered, \\u0026lt;a href=\\\"http://www.va.gov/opa/vetsday/vetdayhistory.asp\\\"\\u0026gt;Veterans Day\\u0026lt;/a\\u0026gt; is the day set aside to thank and honor \\u0026lt;strong\\u0026gt;ALL \\u0026lt;/strong\\u0026gt;those who served honorably in the military - in wartime or peacetime. In fact, Veterans Day is largely intended to thank \\u0026lt;strong\\u0026gt;LIVING\\u0026lt;/strong\\u0026gt; veterans for their service, to acknowledge that their contributions to our national security are appreciated, and to underscore the fact that all those who served - not only those who died - have sacrificed and done their duty.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/qMfLxKHDU6I\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-10T13:00:12-05:00\",\"category\":\"Veterans Day\",\"guid\":\"http://blog.usa.gov/post/102287643172\",\"feedburner_origLink\":\"http://blog.usa.gov/post/102287643172\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/qMfLxKHDU6I/102287643172"], ["published_at", Mon, 10 Nov 2014 18:00:12 UTC +00:00], ["title", "What's the Difference Between Memorial Day and Veterans Day?"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (56.3ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/102277080376"], ["json", "{\"title\":\"Image description: Are you a teacher looking for free lesson...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/X0i9Ou4VFDQ/102277080376\",\"description\":\"\\u0026lt;img src=\\\"http://31.media.tumblr.com/bfa2d1a2081b8896827e717f72f5568f/tumblr_nemuyt24WW1qeoxw2o1_500.png\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description: Are you a teacher looking for free lesson plans to use in your classroom? Kids.gov has tons of \\u0026lt;a href=\\\"http://kids.usa.gov/teachers/lesson-plans/index.shtml\\\" title=\\\"lesson plans for teachers\\\"\\u0026gt;free resources\\u0026lt;/a\\u0026gt; and puts out a monthly teacher’s calendar with free resources and classroom activities. \\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/X0i9Ou4VFDQ\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-10T10:00:44-05:00\",\"category\":\"kidsgov\",\"guid\":\"http://blog.usa.gov/post/102277080376\",\"feedburner_origLink\":\"http://blog.usa.gov/post/102277080376\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/X0i9Ou4VFDQ/102277080376"], ["published_at", Mon, 10 Nov 2014 15:00:44 UTC +00:00], ["title", "Image description: Are you a teacher looking for free lesson..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/102021151385"], ["json", "{\"title\":\"The healthcare open enrollment period starts soon (November...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/I-qg1xXA664/102021151385\",\"description\":\"\\u0026lt;iframe width=\\\"400\\\" height=\\\"225\\\" src=\\\"https://www.youtube.com/embed/_iVuAPlFjIM?feature=oembed\\\" frameborder=\\\"0\\\" allowfullscreen\\u0026gt;\\u0026lt;/iframe\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;The healthcare open enrollment period starts soon (\\u0026lt;span class=\\\"aBn\\\" data-term=\\\"goog_2140281\\\"\\u0026gt;\\u0026lt;span class=\\\"aQJ\\\"\\u0026gt;November 15th\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;) at \\u0026lt;a href=\\\"https://www.healthcare.gov/\\\" target=\\\"_blank\\\"\\u0026gt;Healthcare.gov\\u0026lt;/a\\u0026gt; - and lasts until \\u0026lt;span class=\\\"aBn\\\" data-term=\\\"goog_2140282\\\"\\u0026gt;\\u0026lt;span class=\\\"aQJ\\\"\\u0026gt;February 15, 2015\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Go to the site to explore health insurance options so you can \\u0026lt;a href=\\\"http://publications.usa.gov/USAPubs.php?PubID=990\\\" target=\\\"_blank\\\"\\u0026gt;sign up for a plan\\u0026lt;/a\\u0026gt;. Once you’ve done that - then what? \\u0026lt;a href=\\\"https://www.youtube.com/watch?v=_iVuAPlFjIM\\u0026amp;list=PLaV7m2-zFKph5fHVZgUphIcBKbtS24tKW\\u0026amp;index=2.\\\" target=\\\"_blank\\\"\\u0026gt;This video series\\u0026lt;/a\\u0026gt; from the \\u0026lt;a href=\\\"http://cms.hhs.gov/\\\" target=\\\"_blank\\\"\\u0026gt;Centers for Medicare \\u0026amp; Medicaid Services\\u0026lt;/a\\u0026gt; (CMS) will help you make the most of your coverage with:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;ul\\u0026gt;\\u0026lt;li\\u0026gt;Policy Tips\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;Help finding a Provider\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;Information on preparing for your first doctor visit\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;Words and terms to know \\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;Ways to live a long and healthy life\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;/ul\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/I-qg1xXA664\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-07T13:00:29-05:00\",\"category\":\"video friday\",\"guid\":\"http://blog.usa.gov/post/102021151385\",\"feedburner_origLink\":\"http://blog.usa.gov/post/102021151385\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/I-qg1xXA664/102021151385"], ["published_at", Fri, 07 Nov 2014 18:00:29 UTC +00:00], ["title", "The healthcare open enrollment period starts soon (November..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/102007240702"], ["json", "{\"title\":\"Image description:\\r\\nFrom the White House:\\r\\n\\r\\nPresident Obama...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/mMPZ8gvqb64/102007240702\",\"description\":\"\\u0026lt;img src=\\\"http://31.media.tumblr.com/bdcbdbd2f5ce46edceae6d6fc653c24b/tumblr_nen9xjvVxq1s9dnijo1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://whitehouse.tumblr.com/post/101973571551/president-obama-welcomes-the-little-league-world\\\"\\u0026gt;From the White House\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;President Obama \\u0026lt;a href=\\\"http://go.wh.gov/KchRvg\\\"\\u0026gt;welcomes\\u0026lt;/a\\u0026gt; the Little League World Series U.S. champion Jackie Robinson West All Stars to the Oval Office.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/mMPZ8gvqb64\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-07T08:50:04-05:00\",\"category\":\"Little League\",\"guid\":\"http://blog.usa.gov/post/102007240702\",\"feedburner_origLink\":\"http://blog.usa.gov/post/102007240702\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/mMPZ8gvqb64/102007240702"], ["published_at", Fri, 07 Nov 2014 13:50:04 UTC +00:00], ["title", "Image description:\r\nFrom the White House:\r\n\r\nPresident Obama..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101928035507"], ["json", "{\"title\":\"In My Father's Footsteps\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/T4-otlAMpI0/101928035507\",\"description\":\"\\u0026lt;p\\u0026gt;Just in time for Veterans Day, this is a great read!\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://nationalservice.tumblr.com/post/101862963022/in-my-fathers-footsteps\\\"\\u0026gt;From the Corporation for National and Community Service\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;By Shane Miller\\u0026lt;/strong\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;img alt=\\\"A U.S. Marine Corps staff sergeant salutes the colors at the center walk during the Evening Parade at Marine Barracks Washington in Washington, DC, on May 13, 2011.. (U.S. Marine Corps photo by Lance Cpl. Cody A. Fodale)\\\" src=\\\"https://31.media.tumblr.com/cd5e9349d7a7dad8217ec29822d74fa5/tumblr_inline_n9lhyjnxeV1spgs8j.jpg\\\" title=\\\"A U.S. Marine Corps staff sergeant salutes the colors at the center walk during the Evening Parade at Marine Barracks Washington in Washington, DC, on May 13, 2011.. (U.S. Marine Corps photo by Lance Cpl. Cody A. Fodale)\\\"/\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;Veteran dad inspires son to serve in AmeriCorps and the military\\u0026lt;/strong\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a href=\\\"http://nationalservice.tumblr.com/post/101862963022/in-my-fathers-footsteps\\\"\\u0026gt;Read More\\u0026lt;/a\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/T4-otlAMpI0\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-06T10:00:19-05:00\",\"category\":\"veterans\",\"guid\":\"http://blog.usa.gov/post/101928035507\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101928035507\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/T4-otlAMpI0/101928035507"], ["published_at", Thu, 06 Nov 2014 15:00:19 UTC +00:00], ["title", "In My Father's Footsteps"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101845372890"], ["json", "{\"title\":\"Diabetic Eye Disease Rates Increase Among Hispanics\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/AmCWD9HGP14/101845372890\",\"description\":\"\\u0026lt;p id=\\\"docs-internal-guid-e252eab3-5d76-98e3-ff62-8742a1a876c0\\\"\\u0026gt;\\u0026lt;em\\u0026gt;Approximately 3 million Hispanics at risk of losing their sight in 2030 as a result of complications from diabetes\\u0026lt;/em\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Today, diabetes affects more than 29 million people in the United States or over 9 percent of the population. Are you one of them? \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Mexican Americans and Puerto Ricans represent two of the Hispanic groups with high prevalence of diabetes, although all Hispanics are at risk. \\u0026lt;/span\\u0026gt;\\u0026lt;span\\u0026gt;All people with diabetes, both type 1 and type 2, are also at risk for diabetic eye disease, a leading cause of vision loss and blindness.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Diabetic eye disease refers to a group of eye problems that people with diabetes may face as a complication of the disease and includes cataract, diabetic retinopathy, and glaucoma. \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Diabetic retinopathy, the most common diabetic eye disease, is the leading cause of blindness in adults 20–74 years of age. According to the National Eye Institute (NEI), 1.2 million Hispanics have diabetic retinopathy and this number is projected to increase to approximately 3 million people by 2030. \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;“The longer a person has diabetes, the greater is his or her risk of developing diabetic eye disease,” said Paul A. Sieving, M.D., Ph.D., director of NEI. “If you have diabetes, be sure to have a comprehensive dilated eye exam at least once a year. Diabetic eye disease often has no early warning signs, but can be detected early and treated before vision loss occurs. Don’t wait until you notice an eye problem to have an exam because vision that is lost often cannot be restored.” \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;While all people with diabetes can develop diabetic eye disease, Hispanics and older adults with diabetes are two of the groups at higher risk of losing vision or going blind from it. All people with diabetes should have a dilated eye exam at least once a year to detect vision problems early. \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;“In fact, with early detection, timely treatment, and appropriate follow-up care, people with diabetic retinopathy can reduce their risk of severe vision loss by 95 percent,” added Suber Huang, M.D., a spokesperson for the National Eye Health Education Program.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;When people with diabetes maintain good control of blood sugar, blood pressure, and cholesterol, they can slow the development and progression of diabetic eye disease. In addition to having the dilated eye exam, people with diabetes should do the following to keep their health on \\u0026lt;/span\\u0026gt;\\u0026lt;span\\u0026gt;TRACK:\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;ul\\u0026gt;\\u0026lt;li\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;T\\u0026lt;/strong\\u0026gt;\\u0026lt;span\\u0026gt;ake your medications.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;R\\u0026lt;/strong\\u0026gt;\\u0026lt;span\\u0026gt;each and maintain a healthy weight.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;A\\u0026lt;/strong\\u0026gt;\\u0026lt;span\\u0026gt;dd physical activity to your daily routine.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;C\\u0026lt;/strong\\u0026gt;\\u0026lt;span\\u0026gt;ontrol your blood sugar, blood pressure, and cholesterol.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;li\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;K\\u0026lt;/strong\\u0026gt;\\u0026lt;span\\u0026gt;ick the smoking habit.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;/ul\\u0026gt;\\u0026lt;p\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;span\\u0026gt;For more information on diabetic eye disease and tips on finding an eye care professional or financial assistance for eye care, visit \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.nei.nih.gov/diabetes\\\"\\u0026gt;\\u0026lt;span\\u0026gt;\\u0026lt;a href=\\\"http://www.nei.nih.gov/diabetes\\\"\\u0026gt;www.nei.nih.gov/diabetes\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt; or call NEI at 301–496–5248.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;h3\\u0026gt;\\u0026lt;a href=\\\"http://blog.gobiernousa.gov/post/101850072634/la-enfermedad-diabetica-del-ojo-afecta-a-mas-hispanos\\\" target=\\\"_blank\\\"\\u0026gt;Read this note in Spanish\\u0026lt;/a\\u0026gt;.\\u0026lt;/h3\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/AmCWD9HGP14\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-05T10:00:00-05:00\",\"category\":\"health\",\"guid\":\"http://blog.usa.gov/post/101845372890\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101845372890\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/AmCWD9HGP14/101845372890"], ["published_at", Wed, 05 Nov 2014 15:00:00 UTC +00:00], ["title", "Diabetic Eye Disease Rates Increase Among Hispanics"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101840945177"], ["json", "{\"title\":\"Image description: Thanks to everyone who got out and voted...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/OT7NuAvNu5k/101840945177\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/9b4c3d77a2b46d47f4c72a6cbc979d21/tumblr_nekildH7zy1qeoxw2o1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://38.media.tumblr.com/60ac0174d5ec61219433114e790de9a7/tumblr_nekildH7zy1qeoxw2o2_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://33.media.tumblr.com/4b71625c3ea418f7fdd7c928bcff74c1/tumblr_nekildH7zy1qeoxw2o4_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://33.media.tumblr.com/90c4c8c9cc1294ffd8427f1dd6333357/tumblr_nekildH7zy1qeoxw2o3_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://38.media.tumblr.com/070b7f9e5852c2282a383a320970d1e1/tumblr_nekildH7zy1qeoxw2o5_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://33.media.tumblr.com/dcc558de197d1d94b7c6d9c1158f8558/tumblr_nekildH7zy1qeoxw2o7_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://38.media.tumblr.com/ae59e1224c667344a1e8c79c8c6f845e/tumblr_nekildH7zy1qeoxw2o6_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;img src=\\\"http://33.media.tumblr.com/b6ab7f4472c3d7fe5c3ef486c9cf9baf/tumblr_nekildH7zy1qeoxw2o8_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt; \\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description: Thanks to everyone who got out and voted yesterday, and a special thanks for sharing your “I voted” stickers with us!\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;It’s not to late to share your election selfie with us. Just tweet it to \\u0026lt;a href=\\\"http://twitter.com/usagov\\\" title=\\\"USA.gov on Twitter\\\"\\u0026gt;@USAgov\\u0026lt;/a\\u0026gt;.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Check out \\u0026lt;a href=\\\"http://twitter.com/usagov\\\" title=\\\"USA.gov on Twitter\\\"\\u0026gt;our Twitter feed\\u0026lt;/a\\u0026gt; for more great pictures of people showing off their stickers!\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/OT7NuAvNu5k\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-05T08:24:49-05:00\",\"category\":\"voting\",\"guid\":\"http://blog.usa.gov/post/101840945177\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101840945177\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/OT7NuAvNu5k/101840945177"], ["published_at", Wed, 05 Nov 2014 13:24:49 UTC +00:00], ["title", "Image description: Thanks to everyone who got out and voted..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101767266832"], ["json", "{\"title\":\"The U.S. Election Assistance Commission (EAC)\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/_gyWH2l32C4/101767266832\",\"description\":\"\\u0026lt;a href=\\\"http://go.usa.gov/7sNx\\\"\\u0026gt;The U.S. Election Assistance Commission (EAC)\\u0026lt;/a\\u0026gt;: \\u0026lt;blockquote\\u0026gt;\\u0026lt;p\\u0026gt;Find State Voter Information with links to state election Web sites with voter guides, registration information and deadlines, absentee and early voting dates, provisional voting information and polling place hours and locations.\\u0026lt;/p\\u0026gt;\\u0026lt;/blockquote\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;It’s Election Day! If you haven’t voted yet, find your polling place and go cast your ballot: \\u0026lt;a href=\\\"http://go.usa.gov/7sNx\\\"\\u0026gt;http://go.usa.gov/7sNx\\u0026lt;/a\\u0026gt; #vote\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/_gyWH2l32C4\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-04T11:57:06-05:00\",\"guid\":\"http://blog.usa.gov/post/101767266832\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101767266832\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/_gyWH2l32C4/101767266832"], ["published_at", Tue, 04 Nov 2014 16:57:06 UTC +00:00], ["title", "The U.S. Election Assistance Commission (EAC)"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101675422752"], ["json", "{\"title\":\"Image description:\\r\\nFrom Smithsonian Magazine:\\r\\n\\r\\nPhoto of the Day:...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/Gf5c4UR5Mww/101675422752\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/e5c982260c57883cbea45350bea8c53c/tumblr_nea2l8iOjU1r7u6l5o1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://smithsonianmag.tumblr.com/post/101403552974/smithsonian-magazine-photo-of-the-day\\\"\\u0026gt;From Smithsonian Magazine\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;u\\u0026gt;\\u0026lt;strong\\u0026gt;Photo of the Day: The Mothership Has Landed\\u0026lt;/strong\\u0026gt;\\u0026lt;/u\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;em\\u0026gt;A lenticular cloud hovers above Mount Shasta.\\u0026lt;/em\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Photo by Ruben Garcia (Redding, California, USA); Mount Shasta, California, USA\\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/Gf5c4UR5Mww\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-03T10:00:19-05:00\",\"category\":\"nature\",\"guid\":\"http://blog.usa.gov/post/101675422752\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101675422752\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/Gf5c4UR5Mww/101675422752"], ["published_at", Mon, 03 Nov 2014 15:00:19 UTC +00:00], ["title", "Image description:\r\nFrom Smithsonian Magazine:\r\n\r\nPhoto of the Day:..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101489815610"], ["json", "{\"title\":\"Kids.gov Celebrates National Child's Day\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/HBQIZYG7nDE/101489815610\",\"description\":\"\\u0026lt;p\\u0026gt;In today’s digital age you can do almost everything from a computer or cell phone, whether it’s keeping up with family or buying plane tickets. The same can be said about education, it extends beyond the walls of the classroom.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;As we celebrate National Child’s Day on November 20, we feature \\u0026lt;a href=\\\"http://kids.usa.gov/index.shtml\\\" target=\\\"_blank\\\"\\u0026gt;Kids.gov\\u0026lt;/a\\u0026gt;, a site run by the United States government with resources dedicated to the education of children and teens. Kids.gov consists of four main sections: two for students (children and teens), one for teachers, and one for parents.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;Kids.gov main sections\\u0026lt;/strong\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;ul type=\\\"disc\\\"\\u0026gt;\\u0026lt;li\\u0026gt;\\u0026lt;a href=\\\"http://kids.usa.gov/index.shtml\\\" target=\\\"_blank\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;Kids Grade K-5\\u0026lt;/strong\\u0026gt;\\u0026lt;/a\\u0026gt; and \\u0026lt;a href=\\\"http://kids.usa.gov/teens/index.html\\\" target=\\\"_blank\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;Teens Grade 6-8\\u0026lt;/strong\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;/ul\\u0026gt;\\u0026lt;p\\u0026gt;These two sections provide age-appropriate information about school topics such as reading and writing, social studies, and math. There are interactive games to play and educational videos to watch. Students will also find information about all the states, and fun quizzes about topics such as science, history, and United States government.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;ul type=\\\"disc\\\"\\u0026gt;\\u0026lt;li\\u0026gt;\\u0026lt;a href=\\\"http://kids.usa.gov/teachers/index.shtml\\\" target=\\\"_blank\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;Teachers\\u0026lt;/strong\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;/ul\\u0026gt;\\u0026lt;p\\u0026gt;This section offers resources and study materials to help teachers plan their lessons, a calendar to plan seasonal school activities, and various other educational resources. There are also lesson plans for popular themes – like Presidents Day and holidays – as well as other informative material.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;ul type=\\\"disc\\\"\\u0026gt;\\u0026lt;li\\u0026gt;\\u0026lt;a href=\\\"http://kids.usa.gov/parents/index.shtml\\\" target=\\\"_blank\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;Parents\\u0026lt;/strong\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;/li\\u0026gt;\\r\\n\\u0026lt;/ul\\u0026gt;\\u0026lt;p\\u0026gt;Parents and family members looking to help their children with studying and school work will find plenty of resources in this section. There are age-appropriate reading lists, ideas for getting more active and other important themes for parents and children.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Both parents and teachers can \\u0026lt;a href=\\\"https://public.govdelivery.com/accounts/USFCIC/subscriber/new\\\" target=\\\"_blank\\\"\\u0026gt;subscribe to Kids.gov\\u0026lt;/a\\u0026gt; to receive email updates. Learn more with exclusive games, posters and videos. Check out \\u0026lt;a href=\\\"http://blog.usa.gov/tagged/kids.gov\\\" target=\\\"_blank\\\"\\u0026gt;USA.gov blog\\u0026lt;/a\\u0026gt; throughout November to see the editor\\u0026amp;#8217;s picks from Kids.gov.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;h3\\u0026gt;\\u0026lt;a href=\\\"http://blog.gobiernousa.gov/post/101489817621/kids-gov-para-celebrar-el-dia-nacional-del-nino\\\" target=\\\"_blank\\\"\\u0026gt;Read this note in Spanish\\u0026lt;/a\\u0026gt;.\\u0026lt;/h3\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/HBQIZYG7nDE\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-11-01T10:00:00-04:00\",\"category\":\"kidsgov\",\"guid\":\"http://blog.usa.gov/post/101489815610\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101489815610\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/HBQIZYG7nDE/101489815610"], ["published_at", Sat, 01 Nov 2014 14:00:00 UTC +00:00], ["title", "Kids.gov Celebrates National Child's Day"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101418565547"], ["json", "{\"title\":\"Happy Halloween!\\r\\nEnjoy this spooky Halloween greeting from NASA.\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/4mlCVYvuIUA/101418565547\",\"description\":\"\\u0026lt;iframe width=\\\"400\\\" height=\\\"225\\\" src=\\\"https://www.youtube.com/embed/nM9x7TYcxBU?feature=oembed\\\" frameborder=\\\"0\\\" allowfullscreen\\u0026gt;\\u0026lt;/iframe\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;h2\\u0026gt;Happy Halloween!\\u0026lt;/h2\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Enjoy this spooky Halloween greeting from NASA.\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/4mlCVYvuIUA\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-31T10:00:32-04:00\",\"category\":\"NASA\",\"guid\":\"http://blog.usa.gov/post/101418565547\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101418565547\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/4mlCVYvuIUA/101418565547"], ["published_at", Fri, 31 Oct 2014 14:00:32 UTC +00:00], ["title", "Happy Halloween!\r\nEnjoy this spooky Halloween greeting from NASA."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101348216611"], ["json", "{\"title\":\"Social Security Benefits to Increase in 2015\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/g3w_Q97xWuk/101348216611\",\"description\":\"\\u0026lt;p id=\\\"docs-internal-guid-5619b834-5d8d-1642-b057-6a74cb629cf9\\\"\\u0026gt;\\u0026lt;span\\u0026gt;The \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.ssa.gov/\\\"\\u0026gt;\\u0026lt;span\\u0026gt;Social Security Administration\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt; announced a \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.ssa.gov/news/#!/post/10-2014-2\\\"\\u0026gt;\\u0026lt;span\\u0026gt;1.7% COLA increase\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt; for monthly Social Security and Supplemental Security Income (SSI). This means that the 64 million Americans receiving Social Security benefits will see about 22 additional dollars in their check each month. The increase will take effect in January 2015. \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;A \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.socialsecurity.gov/news/cola/docs/factsheet.htm\\\"\\u0026gt;\\u0026lt;span\\u0026gt;COLA\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt; is a “cost of living adjustment”. SSI benefits are adjusted to reflect increases, if any, in the cost of living as measured by the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W) prepared by the \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.bls.gov/\\\"\\u0026gt;\\u0026lt;span\\u0026gt;Bureau of Labor Statistics\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt;.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;If you need to apply for retirement or disability benefits, you can do so online. \\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.socialsecurity.gov/hlp/video/iclaim_r01.htm\\\"\\u0026gt;\\u0026lt;span\\u0026gt;This video\\u0026lt;/span\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;span\\u0026gt; has helpful hints and tips as you go through the application process. \\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/g3w_Q97xWuk\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-30T13:00:23-04:00\",\"category\":\"benefits\",\"guid\":\"http://blog.usa.gov/post/101348216611\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101348216611\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/g3w_Q97xWuk/101348216611"], ["published_at", Thu, 30 Oct 2014 17:00:23 UTC +00:00], ["title", "Social Security Benefits to Increase in 2015"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101338545722"], ["json", "{\"title\":\"Protect Yourself From Ghouls, Ghosts, and Goblins\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/e7aJI7NJk5U/101338545722\",\"description\":\"\\u0026lt;p\\u0026gt;\\u0026lt;em\\u0026gt;From FDA\\u0026amp;#8217;s Office of Women\\u0026amp;#8217;s Health\\u0026lt;/em\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Keep your Halloween safe, not scary!  From planning your costume to trick or treating, to hosting a party, FDA has you covered. Read on for important information you need to know about food, make-up and contact lenses.\\u0026lt;a href=\\\"http://links.govdelivery.com:80/track?type=click\\u0026amp;amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTQxMDI5LjM3NTg3MTExJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE0MTAyOS4zNzU4NzExMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE2OTgxNjMzJmVtYWlsaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZ1c2VyaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;101\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;http://www.fda.gov/Food/ResourcesForYou/Consumers/ucm187021.htm?source=govdelivery\\u0026amp;amp;utm_medium=email\\u0026amp;amp;utm_source=govdelivery\\\" target=\\\"_blank\\\"\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p align=\\\"left\\\"\\u0026gt;\\u0026lt;span\\u0026gt;\\u0026lt;a href=\\\"http://links.govdelivery.com:80/track?type=click\\u0026amp;amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTQxMDI5LjM3NTg3MTExJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE0MTAyOS4zNzU4NzExMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE2OTgxNjMzJmVtYWlsaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZ1c2VyaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;102\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;http://www.fda.gov/Food/ResourcesForYou/Consumers/ucm187021.htm?source=govdelivery\\u0026amp;amp;utm_medium=email\\u0026amp;amp;utm_source=govdelivery\\\" target=\\\"_blank\\\"\\u0026gt;Halloween Food Safety Tips for Parents \\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p align=\\\"left\\\"\\u0026gt;\\u0026lt;a href=\\\"http://links.govdelivery.com:80/track?type=click\\u0026amp;amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTQxMDI5LjM3NTg3MTExJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE0MTAyOS4zNzU4NzExMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE2OTgxNjMzJmVtYWlsaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZ1c2VyaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;103\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;http://www.fda.gov/Cosmetics/ProductsIngredients/Products/ucm143055.htm?source=govdelivery\\u0026amp;amp;utm_medium=email\\u0026amp;amp;utm_source=govdelivery\\\" target=\\\"_blank\\\"\\u0026gt;What You Need to Know About Novelty Makeup \\u0026lt;/a\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p align=\\\"left\\\"\\u0026gt;\\u0026lt;a href=\\\"http://links.govdelivery.com:80/track?type=click\\u0026amp;amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTQxMDI5LjM3NTg3MTExJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE0MTAyOS4zNzU4NzExMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE2OTgxNjMzJmVtYWlsaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZ1c2VyaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;104\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;https://www.youtube.com/watch?source=govdelivery\\u0026amp;amp;utm_medium=email\\u0026amp;amp;utm_source=govdelivery\\u0026amp;amp;v=8Qqh_ZtgBQ8\\\" target=\\\"_blank\\\"\\u0026gt;Decorative Contact Lenses: Don’t Lose Sight of Your Vision (video)\\u0026lt;/a\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p align=\\\"left\\\"\\u0026gt;\\u0026lt;a href=\\\"http://links.govdelivery.com:80/track?type=click\\u0026amp;amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTQxMDI5LjM3NTg3MTExJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE0MTAyOS4zNzU4NzExMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE2OTgxNjMzJmVtYWlsaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZ1c2VyaWQ9dG9ueWEuYmVyZXNAZ3NhLmdvdiZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;105\\u0026amp;amp;\\u0026amp;amp;\\u0026amp;amp;http://www.fda.gov/forconsumers/consumerupdates/ucm230283.htm?source=govdelivery\\u0026amp;amp;utm_medium=email\\u0026amp;amp;utm_source=govdelivery\\\" target=\\\"_blank\\\"\\u0026gt;“Lucky 13” Tips for a Safe Halloween \\u0026lt;/a\\u0026gt; \\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/e7aJI7NJk5U\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-30T10:00:20-04:00\",\"category\":\"Halloween\",\"guid\":\"http://blog.usa.gov/post/101338545722\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101338545722\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/e7aJI7NJk5U/101338545722"], ["published_at", Thu, 30 Oct 2014 14:00:20 UTC +00:00], ["title", "Protect Yourself From Ghouls, Ghosts, and Goblins"], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101263707567"], ["json", "{\"title\":\"Image description: Even the animals at the National Zoo are...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/mCnGRFLBBuI/101263707567\",\"description\":\"\\u0026lt;img src=\\\"http://38.media.tumblr.com/62b9162427b940d1fbdd74f131de9eee/tumblr_ne7rwpubZO1qeoxw2o1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description: Even the animals at the National Zoo are getting into the Halloween spirit this week. With pumpkin enrichment, otters can feel the squish between their toes and smell new and different scents.\\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;Photo from the National Zoo.\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/mCnGRFLBBuI\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-29T12:17:13-04:00\",\"guid\":\"http://blog.usa.gov/post/101263707567\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101263707567\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/mCnGRFLBBuI/101263707567"], ["published_at", Wed, 29 Oct 2014 16:17:13 UTC +00:00], ["title", "Image description: Even the animals at the National Zoo are..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101217292697"], ["json", "{\"title\":\"Image description: A creepy looking face appears in this lava...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/qUUQmY3awVs/101217292697\",\"description\":\"\\u0026lt;img src=\\\"http://31.media.tumblr.com/905415ff3c6e4f54e8060cec03f0a003/tumblr_ne6lb8Y0pE1qeoxw2o1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description: A creepy looking face appears in this lava flow from 2007. What do you see? #Halloween \\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;Thanks to the U.S. Geological Survey for sharing this creepy photo!\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/qUUQmY3awVs\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-28T20:57:08-04:00\",\"guid\":\"http://blog.usa.gov/post/101217292697\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101217292697\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/qUUQmY3awVs/101217292697"], ["published_at", Wed, 29 Oct 2014 00:57:08 UTC +00:00], ["title", "Image description: A creepy looking face appears in this lava..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101178861422"], ["json", "{\"title\":\"Image description: Today in 1886, Grover Cleveland dedicated the...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/9QiElNbwvxM/101178861422\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/5df3fb33e12f14e9d79a760316355a10/tumblr_ne5wbeWa9d1qeoxw2o1_500.png\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description: Today in 1886, Grover Cleveland dedicated the Statue of Liberty. The French gift attracts around 5 million visitors each year. \\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;If you can’t make a trip in person, you can check out online webcams and virtual tours: \\u0026lt;a href=\\\"http://go.usa.gov/vUYA\\\"\\u0026gt;http://go.usa.gov/vUYA\\u0026lt;/a\\u0026gt; \\u0026lt;/p\\u0026gt;\\r\\n\\r\\n\\u0026lt;p\\u0026gt;Photo from the National Park Service.\\u0026lt;/p\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/9QiElNbwvxM\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-28T11:57:14-04:00\",\"guid\":\"http://blog.usa.gov/post/101178861422\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101178861422\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/9QiElNbwvxM/101178861422"], ["published_at", Tue, 28 Oct 2014 15:57:14 UTC +00:00], ["title", "Image description: Today in 1886, Grover Cleveland dedicated the..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101175733317"], ["json", "{\"title\":\"Image description:\\r\\nFrom the National Archives:\\r\\n\\r\\nNational...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/h7Uvz8ADM3s/101175733317\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/ebb1eb89afd565bfd611d138d9889ab3/tumblr_ndwxyvSW6G1r5j9hco1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://usnatarchives.tumblr.com/post/100841978999/national-archives-is-hosting-a-virtual-genealogy\\\"\\u0026gt;From the National Archives\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span class=\\\"fbPhotosPhotoCaption\\\" id=\\\"fbPhotoSnowliftCaption\\\" data-ft='{\\\"tn\\\":\\\"K\\\"}'\\u0026gt;\\u0026lt;span class=\\\"hasCaption\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;National Archives is hosting a Virtual Genealogy Fair!\\u0026lt;/strong\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span class=\\\"fbPhotosPhotoCaption\\\" data-ft='{\\\"tn\\\":\\\"K\\\"}'\\u0026gt;\\u0026lt;span class=\\\"hasCaption\\\"\\u0026gt;Join for us three days genealogy! All of our lectures will be broadcast live via YouTube with captioning on StreamText. \\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span class=\\\"fbPhotosPhotoCaption\\\" data-ft='{\\\"tn\\\":\\\"K\\\"}'\\u0026gt;\\u0026lt;span class=\\\"hasCaption\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;On October 28, 29, and 30\\u0026lt;/strong\\u0026gt;, genealogy experts from National Archives facilities around the nation and special guests from the U.S. Citizen and Immigration Services, \\u0026lt;a href=\\\"http://Ancestry.com/\\\" rel=\\\"nofollow nofollow\\\"\\u0026gt;Ancestry.com\\u0026lt;/a\\u0026gt;, and FamilySearch will discuss topics ranging fr\\u0026lt;span class=\\\"text_exposed_show\\\"\\u0026gt;om preserving your own personal records to American Indian records. \\u0026lt;br/\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span class=\\\"fbPhotosPhotoCaption\\\" data-ft='{\\\"tn\\\":\\\"K\\\"}'\\u0026gt;\\u0026lt;span class=\\\"hasCaption\\\"\\u0026gt;\\u0026lt;span class=\\\"text_exposed_show\\\"\\u0026gt;Best of all, you do not need to get out of bed! The lectures will broadcast live on our National Archives YouTube channel and the handouts and presentations will be available to download at our Virtual Genealogy Fair homepage: \\u0026lt;a href=\\\"http://www.archives.gov/calendar/genealogy-fair\\\"\\u0026gt;www.archives.gov/calendar/\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.archives.gov/calendar/genealogy-fair\\\"\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;genealogy-fair\\u0026lt;/a\\u0026gt;. \\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;strong\\u0026gt;Tuesday\\u0026lt;/strong\\u0026gt;: \\u0026lt;a href=\\\"https://www.youtube.com/watch?v=cy8sqN1TUF8\\\"\\u0026gt;https://www.youtube.com/\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"https://www.youtube.com/watch?v=cy8sqN1TUF8\\\"\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;watch?v=cy8sqN1TUF8\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt; Close Captioning: \\u0026lt;a href=\\\"http://www.streamtext.net/player?event=102814nara1000am\\\"\\u0026gt;http://www.streamtext.net/\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.streamtext.net/player?event=102814nara1000am\\\"\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;span\\u0026gt;player?event=102814nara1000\\u0026lt;/span\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;am\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;strong\\u0026gt;Wednesday\\u0026lt;/strong\\u0026gt;: \\u0026lt;a href=\\\"https://www.youtube.com/watch?v=hIuirre9BN8\\\"\\u0026gt;https://www.youtube.com/\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;watch?v=hIuirre9BN8\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt; Close Captioning: \\u0026lt;a href=\\\"http://www.streamtext.net/player?event=102914nara1000am\\\"\\u0026gt;http://www.streamtext.net/\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;span\\u0026gt;player?event=102914nara1000\\u0026lt;/span\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;am\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;strong\\u0026gt;Thursday\\u0026lt;/strong\\u0026gt;: \\u0026lt;a href=\\\"https://www.youtube.com/watch?v=rUAq9bik8ZY\\\"\\u0026gt;https://www.youtube.com/\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;watch?v=rUAq9bik8ZY\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt; Close Captioning: \\u0026lt;a href=\\\"http://www.streamtext.net/player?event=103014nara1000am\\\"\\u0026gt;http://www.streamtext.net/\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;span\\u0026gt;player?event=103014nara1000\\u0026lt;/span\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;am\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt; Have a question for our experts? No problem! Simply ask during the lectures using Twitter and the hashtag \\u0026lt;a class=\\\"_58cn\\\" href=\\\"https://www.facebook.com/hashtag/genfair2014\\\" data-ft='{\\\"tn\\\":\\\"*N\\\",\\\"type\\\":104}'\\u0026gt;#GenFair2014\\u0026lt;/a\\u0026gt; and we’ll have a dedicated question and answer time at the end of each lecture!\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span class=\\\"fbPhotosPhotoCaption\\\" data-ft='{\\\"tn\\\":\\\"K\\\"}'\\u0026gt;\\u0026lt;span class=\\\"hasCaption\\\"\\u0026gt;\\u0026lt;span class=\\\"text_exposed_show\\\"\\u0026gt;So gather your grandmother’s photos, pop some popcorn, and check out the Virtual Genealogy Fair schedule at \\u0026lt;a href=\\\"http://www.archives.gov/calendar/genealogy-fair\\\"\\u0026gt;www.archives.gov/calendar/\\u0026lt;/a\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;a href=\\\"http://www.archives.gov/calendar/genealogy-fair\\\"\\u0026gt;\\u0026lt;span class=\\\"word_break\\\"\\u0026gt;\\u0026lt;/span\\u0026gt;genealogy-fair\\u0026lt;/a\\u0026gt; and tune in starting at 10 a.m. EDT next week! \\u0026lt;br/\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/h7Uvz8ADM3s\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-28T11:00:48-04:00\",\"category\":\"genealogy\",\"guid\":\"http://blog.usa.gov/post/101175733317\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101175733317\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/h7Uvz8ADM3s/101175733317"], ["published_at", Tue, 28 Oct 2014 15:00:48 UTC +00:00], ["title", "Image description:\r\nFrom the National Archives:\r\n\r\nNational..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/101086603773"], ["json", "{\"title\":\"Image description:\\r\\nFrom the Department of Interior:\\r\\n\\r\\nOne word:...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/IdQMzXCjskU/101086603773\",\"description\":\"\\u0026lt;img src=\\\"http://31.media.tumblr.com/cbf7152d1ebe73afa87e59c1483a4b28/tumblr_ndyen6VB4l1r81c8do1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://americasgreatoutdoors.tumblr.com/post/100831714004/one-word-wow-ranger-carey-goldstein-snapped\\\"\\u0026gt;From the Department of Interior\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;One word: WOW!\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Ranger Carey Goldstein snapped this photo of the partial solar eclipse through the solar telescope set up at the \\u0026lt;a href=\\\"http://www.nps.gov/jotr/index.htm\\\"\\u0026gt;Joshua Tree National Park\\u0026lt;/a\\u0026gt; in California.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/IdQMzXCjskU\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-27T10:00:23-04:00\",\"category\":\"eclipse\",\"guid\":\"http://blog.usa.gov/post/101086603773\",\"feedburner_origLink\":\"http://blog.usa.gov/post/101086603773\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/IdQMzXCjskU/101086603773"], ["published_at", Mon, 27 Oct 2014 14:00:23 UTC +00:00], ["title", "Image description:\r\nFrom the Department of Interior:\r\n\r\nOne word:..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/100828989198"], ["json", "{\"title\":\"Image description:\\r\\nFrom the Department of Interior:\\r\\n\\r\\nFall colors...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/7pW4CmcztVI/100828989198\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/1146f96dd99ee9df6b5dbf9afffece1a/tumblr_nduovlV17b1r81c8do1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://americasgreatoutdoors.tumblr.com/post/100668883954/fall-colors-are-cropping-up-all-around-great-smoky\\\"\\u0026gt;From the Department of Interior\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Fall colors are cropping up all around \\u0026lt;a href=\\\"http://www.nps.gov/grsm/index.htm\\\"\\u0026gt;Great Smoky Mountains National Park\\u0026lt;/a\\u0026gt;! Kent Cave captured this photo of The Sinks — a scenic area of cascades and deep pools along Little River Road — where the trees are bursting with beautiful oranges, reds and yellows.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;span\\u0026gt;Photo by National Park Service.\\u0026lt;/span\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/7pW4CmcztVI\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-24T10:00:12-04:00\",\"category\":\"fall\",\"guid\":\"http://blog.usa.gov/post/100828989198\",\"feedburner_origLink\":\"http://blog.usa.gov/post/100828989198\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/7pW4CmcztVI/100828989198"], ["published_at", Fri, 24 Oct 2014 14:00:12 UTC +00:00], ["title", "Image description:\r\nFrom the Department of Interior:\r\n\r\nFall colors..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00], ["feed_id", 1], ["guid", "http://blog.usa.gov/post/100758211727"], ["json", "{\"title\":\"Image description:\\r\\nFrom the National Archives:\\r\\n\\r\\nDid someone say...\",\"link\":\"http://feedproxy.google.com/~r/USAgov-blog/~3/Dh8-gu9Hi50/100758211727\",\"description\":\"\\u0026lt;img src=\\\"http://33.media.tumblr.com/9af4b99fa7a5456c9441f886bad994d5/tumblr_nde2stAjK21toclb3o1_500.jpg\\\"/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;p\\u0026gt;Image description:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://todaysdocument.tumblr.com/post/100679896177/did-someone-say-gifs\\\"\\u0026gt;From the National Archives\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;Did someone say \\u0026lt;a href=\\\"http://todaysdocument.tumblr.com/tagged/gif\\\"\\u0026gt;#GIFs\\u0026lt;/a\\u0026gt;?\\u0026lt;/strong\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;a class=\\\"tumblr_blog\\\" href=\\\"http://digitalpubliclibraryofamerica.tumblr.com/post/99910656165/its-a-public-domain-celebration-the-digital\\\"\\u0026gt;digitalpubliclibraryofamerica\\u0026lt;/a\\u0026gt;:\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;It’s a public domain celebration! The \\u0026lt;a href=\\\"http://dp.la/\\\"\\u0026gt;Digital Public Library of America\\u0026lt;/a\\u0026gt; and \\u0026lt;a href=\\\"http://www.digitalnz.org/\\\"\\u0026gt;DigitalNZ\\u0026lt;/a\\u0026gt; are very excited to announce the launch of \\u0026lt;a href=\\\"http://dp.la/info/gif-it-up/\\\"\\u0026gt;\\u0026lt;strong\\u0026gt;GIF IT UP\\u0026lt;/strong\\u0026gt;\\u0026lt;/a\\u0026gt;, an international competition over the next six weeks to find the best GIFs reusing public domain and openly licensed digital video, images, text, and other material available via our search portals. The winners will have their work featured and celebrated online at the \\u0026lt;a href=\\\"http://publicdomainreview.org/\\\"\\u0026gt;Public Domain Review\\u0026lt;/a\\u0026gt; and \\u0026lt;a href=\\\"http://www.smithsonianmag.com/?no-ist\\\"\\u0026gt;Smithsonian.com\\u0026lt;/a\\u0026gt;. Pretty sweet, huh?\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;To find out more about GIF IT UP, including how you can participate, visit \\u0026lt;a href=\\\"http://dp.la/info/gif-it-up/\\\"\\u0026gt;http://dp.la/info/gif-it-up/\\u0026lt;/a\\u0026gt;. Happy GIFing! \\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Planning to GIF IT UP? Look no further than the \\u0026lt;strong\\u0026gt;\\u0026lt;a href=\\\"http://research.archives.gov/search\\\"\\u0026gt;National Archives’ Online Catalog (OPA)\\u0026lt;/a\\u0026gt;\\u0026lt;/strong\\u0026gt; for a variety of (mostly) public domain source material.  \\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;Check back soon!  We’ll be sharing a few ideas for the \\u0026lt;a href=\\\"http://dp.la/info/gif-it-up/\\\"\\u0026gt;GIF It Up Challenge categories\\u0026lt;/a\\u0026gt;.\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;p\\u0026gt;\\u0026lt;strong\\u0026gt;Don’t forget to \\u0026lt;a href=\\\"http://todaysdocument.tumblr.com/submit\\\"\\u0026gt;share your National Archives #HistoryGIFs\\u0026lt;/a\\u0026gt; with \\u0026lt;a class=\\\"tumblelog\\\" href=\\\"http://tmblr.co/mOnNkOHE82nrbTmZBWIa2Dg\\\"\\u0026gt;todaysdocument\\u0026lt;/a\\u0026gt; too!\\u0026lt;/strong\\u0026gt;\\u0026lt;/p\\u0026gt;\\r\\n\\u0026lt;/blockquote\\u0026gt;\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/USAgov-blog/~4/Dh8-gu9Hi50\\\" height=\\\"1\\\" width=\\\"1\\\"/\\u0026gt;\",\"pubDate\":\"2014-10-23T13:00:22-04:00\",\"category\":\"gifitup\",\"guid\":\"http://blog.usa.gov/post/100758211727\",\"feedburner_origLink\":\"http://blog.usa.gov/post/100758211727\"}"], ["link", "http://feedproxy.google.com/~r/USAgov-blog/~3/Dh8-gu9Hi50/100758211727"], ["published_at", Thu, 23 Oct 2014 17:00:22 UTC +00:00], ["title", "Image description:\r\nFrom the National Archives:\r\n\r\nDid someone say..."], ["updated_at", Tue, 11 Nov 2014 00:01:18 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 200 OK in 1141ms (Views: 0.6ms | ActiveRecord: 146.9ms)
+
+
+Started GET "/api/feeds/1/entries" for 127.0.0.1 at 2014-11-10 19:01:19 -0500
+Processing by Api::EntriesController#index as JSON
+  Parameters: {"feed_id"=>"1"}
+  [1m[36mFeed Load (1.2ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEntry Load (2.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+Completed 200 OK in 51ms (Views: 19.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/feeds/1/entries" for 127.0.0.1 at 2014-11-10 19:01:24 -0500
+Processing by Api::EntriesController#index as JSON
+  Parameters: {"feed_id"=>"1"}
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEntry Load (3.8ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+Completed 200 OK in 40ms (Views: 32.5ms | ActiveRecord: 4.7ms)
